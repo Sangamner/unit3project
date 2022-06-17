@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/76c506f074.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        
+        .navbar{
+            display: flex;
+            margin-top: 20px;
+    
+        }
+        #topline{
+            margin-bottom: 70px;
+        }
+        #headimage{
+            height: 22px;
+            width: 25%;
+            display: flex;;
+            margin: auto;
+            margin-right: 38%;
+        }
+        .leftimg{
+            margin-left: 10px; 
+            
+        }
+         .navbar a{
+            color: gray;
+            font-weight: 100;
+            text-decoration: none;
+        }
+        .maindiv{
+            display: grid;
+            gap: 15px;
+            margin: auto;
+            border: solid 3px #dfe1e6;
+            width: 30%;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .maindiv h1{
+            font-size: 25px;
+        }
+        .somedia{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            gap: 10px;
+            font-size: 12px;
+            height: 40px;
+           
+        }
+        button{
+            border-radius: 10px;
+            border-color: rgb(233, 226, 226);
+            background-color: white;
+            border: 1px solid silver;
+            width: 90%;
+            margin: auto;
+        }
+        .somedia h3 {
+            display: flex;
+            color: gray;
+        }
+        .or{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            margin-top: -20px;
+        }
+        .or hr{
+            width: 32%;
+            height: 0px;
+        }
+        #enter{
+            font-size: 15px;
+            font-family: sans-serif;
+            width: 80%;
+            justify-content: center;
+            margin: auto;
+            color: gray;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid rgb(20, 20, 150);
+            width: 80%;
+            margin: auto;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        #continue{
+            
+            border: 1px solid rgb(20, 20, 150);
+            width: 80%;
+            margin: auto;
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 17px;
+            color: blue;
+            font-weight: bold;
+        }
+        #new{
+            font-size: 13px;
+            color: gray;
+            margin-top: -15px;
+        }
+        #createaccount{
+            margin-top: -20px; 
+        }
+        #createaccount a{
+            font-size: 14px;
+            color: rgb(28, 28, 204);
+            
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+ <i class="fa-solid fa-arrow-left leftimg"><a href="./index.html">Back to Indianexpress</a></i>
+    <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/indian-express-logo-n.svg" alt="" id="headimage">
+   </div>
+   <hr id="topline">
+   <div class="maindiv">
+    <h1>Welcome back</h1>
+    <button><div class="ev fa fa-google  somedia" style="color: red;"><h3>Continue with Google</h3></div></button>
+    <button><div class="ev fa fa-facebook somedia" style="color: blue;"><h3>Continue with Facebook</h3></div></button>
+    <button><div class="ev fa fa-apple somedia" ><h3>Continue with Apple</h3></div></button>
+    <div class="or">
+        <hr><p>Or</p><hr>  
+    </div>
+  <p id="enter">Enter the email address or mobile number associated with your account to sign in.</p>
+  <div class="email">
+    <i class="fa-solid fa-at"></i>
+    <i class="fa-regular fa-at"></i>
+    <input id="email" type="text" placeholder="Insert Phone Number/Email">
+
+  </div>
+ <button id="continue"  onclick="getnumber()">Continue</button>
+ <p id="new">New to The Indian Express?</p>
+ <p id="createaccount"><a href="./createaccount.html">Create an account to get started.</a></p>
+</div>
+</body>
+</html>
+<script src="./scripts/signin.js"></script>
